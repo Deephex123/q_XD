@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<audio id="music" src="src/century.mp3"></audio>
+
+<script>
+    window.onload = function(){ 
+         var audio = document.getElementById('music');
+             audio.pause();//打开页面时无音乐
+    }
+    function play() {
+        var audio = document.getElementById('music');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('musicImg').src="images/play.png";
+        }else{
+            audio.pause();
+            audio.currentTime = 0;//音乐从头播放
+            document.getElementById('musicImg').src="images/stop.png";
+        }
+    }
+    </script>
+
+
+<title>Qu</title>
+
+</head>
+<body>
+ 
+<img src="/src/xd.jpg" onclick="play()" alt="main" style="cursor: pointer">
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        flex: 1;
+    }
+
+
+</style>
+
+</body>
+
+</html>
