@@ -3,13 +3,18 @@
 <head>
 
 <meta charset="utf-8">
-
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <audio id="music" src="src/century2.mp3"></audio>
 
 <script>
-    window.onload = function(){ 
-    }
-    function play() {
+    window.onload = function()
+    {
+    };
+    
+  
+    function play() 
+    {
         var audio = document.getElementById('music');
         if (audio.paused) {
             audio.play();
@@ -20,28 +25,36 @@
     }
     </script>
 
-
-<title>Qu</title>
-
-</head>
-<body>
- 
-<img src="src/xd.jpg" onclick="play()" alt="main" style="cursor: pointer">
 <style>
-    html, body {
+
+    .pic 
+    {
         height: 100%;
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: column;
-    }
-
-    body {
-        flex: 1;
-    }
-
-
+        flex-direction:column;
+        display: flex;
+        justify-content: center;
+    
+     }
+    </style>
+    </div>
 </style>
+
+<title>Qu</title>
+</head>
+
+
+<body>
+
+<div class="pic">
+    <img src="src/xd.jpg" onclick="play()" alt="main" style="cursor: pointer">
+</div>
+
+
+
+
 
 </body>
 
