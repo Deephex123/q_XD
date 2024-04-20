@@ -43,7 +43,16 @@
         flex-direction:column;
         display: flex;
         justify-content: center;
+        background: url(src/xd1.png) center center no-repeat;
+        background-position: center;
+
+
     
+     }
+     .pic img:hover
+     {
+        opacity: 0;
+        transition: opacity 0.7s;
      }
 
      .text
@@ -60,14 +69,13 @@
 
 <body>
 
-<div class="pic">
+<div class="pic" >
     <img src="src/xd.jpg" onclick="play()" alt="main" style="cursor: pointer">
 </div>
+
+
 <div class="text">
-
     <h4>点击以咏唱</h4>
-
-
 </div>
 
 
